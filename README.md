@@ -122,7 +122,7 @@ Test bot auth and clone using the remote alias:
 ssh -T git@github-relux
 # Expected output: "Hi relux-git-bot! You've successfully authenticated..."
 
-git clone git@github-relux:relux-works/skill-project-management.git
+git clone git@github-relux:<org>/<repo>.git
 ```
 
 ## 7) Why this avoids prompts

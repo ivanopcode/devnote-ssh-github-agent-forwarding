@@ -69,8 +69,6 @@ ssh-add -l | grep -F "relux-git-bot"
 From your local machine, copy the bot public key and set safe permissions:
 
 ```bash
-# create ssh directory and copy key
-authenticated command
 ssh relux 'mkdir -p ~/.ssh && chmod 700 ~/.ssh'
 cat ~/.ssh/relux-git-bot.pub | ssh relux 'cat > ~/.ssh/relux-git-bot.pub'
 ssh relux 'chmod 644 ~/.ssh/relux-git-bot.pub'

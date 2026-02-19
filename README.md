@@ -77,7 +77,7 @@ ssh relux 'chmod 644 ~/.ssh/relux-git-bot.pub'
 Verify:
 
 ```bash
-ssh relux 'ls -l ~/.ssh/relux-git-bot.pub && sha256sum ~/.ssh/relux-git-bot.pub'
+ssh relux 'ls -l ~/.ssh/relux-git-bot.pub && (sha256sum ~/.ssh/relux-git-bot.pub || shasum -a 256 ~/.ssh/relux-git-bot.pub)'
 ```
 
 > You can replace the three-step deploy with `scp` if you prefer.
